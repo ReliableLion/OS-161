@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+
+int
+main(void)
+{
+	printf("Welcome to the scanf tester!\n");
+	getchar();
+	
+	return 0;
+}

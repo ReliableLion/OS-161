@@ -1,0 +1,20 @@
+#include <types.h>
+#include <kern/errno.h>
+#include <kern/reboot.h>
+#include <kern/unistd.h>
+#include <limits.h>
+#include <lib.h>
+#include <opt-sfs.h>
+#include <opt-net.h>
+#include <opt-syscalls.h>
+
+#if OPT_SYSCALLS
+void syscalls_info(void);
+#endif
+
+void syscalls_info(void) {
+
+	kprintf("Hello Guys!\n");
+	kprintf("I'm implementing this syscalls:\n");
+	kprintf("-- SYS_WRITE() (syscall 55)\n");
+}

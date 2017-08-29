@@ -1,0 +1,11 @@
+# Makefile for scanf_test
+
+TOP=../../..
+.include "$(TOP)/mk/os161.config.mk"
+
+PROG=scanf_test
+SRCS=scanf_test.c
+BINDIR=/testbin
+
+
+.include "$(TOP)/mk/os161.prog.mk"
